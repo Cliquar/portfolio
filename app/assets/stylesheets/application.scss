@@ -1,5 +1,61 @@
 @import "bootstrap";
 
+$main-font: 'Josefin Sans', sans-serif;
+$background-color: #2980b9;
+$intro-text-color: #f1c40f;
+$emph-color: #ecf0f1;
+
+body {
+  background-color: $background-color;
+  font-family: $main-font;
+}
+
+.navbar {
+  font-size: 1.5em;
+  background: none;
+}
+
+.nav-link {
+  color: $emph-color;
+}
+
 .navbar-brand {
   margin-left: 10px;
+  color: $emph-color;
+  font-size: 1.5em;
+}
+
+.intro {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-top: 50px;
+  color: $intro-text-color;
+}
+
+span .emph {
+  color: $emph-color;
+}
+
+.btn-primary {
+  background-color: $intro-text-color;
+  color: $background-color;
+  font-size: 1em;
+  border: none;
+}
+
+.latest-projects h2 {
+  margin: 0 auto;
+  color: $emph-color;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: $intro-text-color;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
 }
