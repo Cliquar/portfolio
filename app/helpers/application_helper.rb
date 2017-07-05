@@ -4,6 +4,8 @@ module ApplicationHelper
     [
       {url: root_path,
       title: 'Home'},
+      {url: portfolios_path,
+        title: 'Portfolio'},
       {url: about_path,
       title: 'About'},
       {url: contact_path,
