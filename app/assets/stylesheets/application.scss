@@ -73,7 +73,17 @@ footer {
   padding-top: 5px;
 }
 
+.portfolio-show-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0.5%;
+}
+
 .page-title {
   color: $intro-text-color;
   text-align: center;
+}
+
+.show-heading {
+  color: $intro-text-color;
 }

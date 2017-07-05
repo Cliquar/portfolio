@@ -1,39 +1,42 @@
-<p id="notice"><%= notice %></p>
+<div id="notice"><%= notice %></div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @portfolio.title %>
-</p>
+<div class="row">
+  <div class="col-xs-12 portfolio-show-container">
+    <div class="col-xs-12">
+      <h3 class="show-heading"> <%= @portfolio.title %> </h3>
+    </div>
+  
+    <div class="col-xs-12">
+      <h5 class="text-muted"><%= @portfolio.sub_title %></h5>
+    </div>
 
-<p>
-  <strong>Sub title:</strong>
-  <%= @portfolio.sub_title %>
-</p>
+  <div class="row">     
+      <%= image_tag(@portfolio.main_img, class: "col-md-6") %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @portfolio.description %>
-</p>
+    <div class="col-xs-12 col-md-6">
+      <%= @portfolio.description %>
+      
+      <hr>
 
-<p>
-  <strong>Thumb img:</strong>
-  <%= @portfolio.thumb_img %>
-</p>
+      <% if @portfolio.gh_link? %>
+        <div>
+          Have a look at my code on 
+          <%= link_to (fa_icon "github"), @portfolio.gh_link, class: "fa_icon-link" %>
+        </div>
+        <% end %>
+      <% if @portfolio.url_link? %>
+        <div>
+          Watch me deployed <%= link_to (fa_icon "globe"), @portfolio.url_link, class: "fa_icon-link" %>
+        </div>
+      <% end %>
 
-<p>
-  <strong>Main img:</strong>
-  <%= @portfolio.main_img %>
-</p>
-
-<p>
-  <strong>Gh link:</strong>
-  <%= @portfolio.gh_link %>
-</p>
-
-<p>
-  <strong>Url link:</strong>
-  <%= @portfolio.url_link %>
-</p>
+      <div class="col-xs-12">
+        <%= link_to 'Back', portfolios_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
