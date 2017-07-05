@@ -1,0 +1,52 @@
+<%= form_with(model: portfolio, local: true) do |form| %>
+  <% if portfolio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(portfolio.errors.count, "error") %> prohibited this portfolio from being saved:</h2>
+
+      <ul>
+      <% portfolio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :portfolio_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sub_title %>
+    <%= form.text_field :sub_title, id: :portfolio_sub_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :portfolio_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thumb_img %>
+    <%= form.text_field :thumb_img, id: :portfolio_thumb_img %>
+  </div>
+
+  <div class="field">
+    <%= form.label :main_img %>
+    <%= form.text_field :main_img, id: :portfolio_main_img %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gh_link %>
+    <%= form.text_field :gh_link, id: :portfolio_gh_link %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url_link %>
+    <%= form.text_field :url_link, id: :portfolio_url_link %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
