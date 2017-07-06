@@ -1,0 +1,2 @@
+class PracticalTraining < Training
+end

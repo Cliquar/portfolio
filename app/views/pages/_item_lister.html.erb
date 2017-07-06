@@ -1,0 +1,5 @@
+<% collection.each do |item| %>
+  <h5><%= item.topic %> <span class="text-muted"> <%= item.time_involved %></span></h5>
+  <h6 class="text-muted"><%= item.institute %></h6>
+  <p><%= item.description %></p>
+<% end %>

@@ -17,15 +17,14 @@
         <li>Photoshop</li>
       </ul>
     </div>
+    <div class="about-card">
+      <%= link_to 'Download resume', '#' %>
+    </div>
   </div>
   <div class="col-xs-12 col-md-8 about-container">
     <div class="about-card">
       <h4>#Education</h4>
-      <% @educations.each do |education| %>
-        <h5><%= education.topic %> <span class="text-muted"> <%= education.time_involved %></span></h5>
-        <h6 class="text-muted"><%= education.institute %></h6>
-        <p><%= education.description %></p>
-      <% end %>
+      <%= render 'item_lister', collection: @educations %>
     </div>
   </div>
 </div>
@@ -33,6 +32,7 @@
   <div class="col-xs-12 col-md-12 about-container">
    <div class="about-card">
      <h4>#Experience</h4>
+     <%= render 'item_lister', collection: @experiences %>
    </div>
  </div>
 </div>

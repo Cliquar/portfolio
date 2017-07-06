@@ -1,0 +1,2 @@
+class EducationalTraining < Training
+end

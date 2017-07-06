@@ -4,7 +4,8 @@ class PagesController < ApplicationController
   end
 
   def about
-    @educations = Education.all
+    @educations = EducationalTraining.all
+    @experiences = PracticalTraining.all
   end
 
   def contact
