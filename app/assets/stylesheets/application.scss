@@ -91,3 +91,22 @@ footer {
 .new-portfolio a {
   color: white;
 }
+
+.about-card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5%;
+}
+
+.about-container h6 {
+  font-style: italic;
+}
+
+.about-container span {
+  font-size: 0.8em;
+}
+
+.about-container h4 {
+  color: $intro-text-color;
+}

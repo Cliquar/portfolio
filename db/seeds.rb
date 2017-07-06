@@ -17,3 +17,31 @@
             url_link: "https://www.google.de/"             
                           )
 end
+
+Education.create!(
+  topic: "Web Development",
+  institute: "CareerFoundry.com",
+  description: "A 6-month intensive training program for Web Developers, 
+                specializing in web development process and methodology, 
+                focusing on building responsive and dynamic web applications. 
+                I graduated from the program on June 2, 2017.
+                During this program I created an eCommerce site from scratch 
+                using best practices on ruby on rails and standard web technologies 
+                like HTML5/CSS/Javascript.",
+  time_involved: "2016 - 2017")
+
+  Education.create!(
+  topic: "Computer Science",
+  institute: "Friedrich-Alexander University Erlangen",
+  description: "I studied Computer Science for two terms, 
+                but didn’t graduate. Despite not graduating 
+                I learned a lot attending classes in algorithm 
+                and data structures using Java and relational 
+                databse systems using SQL.",
+  time_involved: "2014 - 2015")
+
+  Education.create!(
+  topic: "BA in MultiMediaArt",
+  institute: "University of applied Sciences Salzburg",
+  description: "",
+  time_involved: "2010 - 2014")

@@ -1,2 +1,39 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<h1>Who am I?</h1>
+<div class="row">
+  <div class="col-xs-12 col-md-4 about-container">
+    <div class="about-card">
+      <h4>#Skills</h4>
+      <ul>
+        <li>Ruby programming language</li>
+        <li>Ruby on Rails</li>
+        <li>HTML5/CSS</li>
+        <li>Javascript, jQuery and AJAX</li>
+        <li>Bootstrap</li>
+        <li>Git/Github Version Control</li>
+        <li>Heroku</li>
+        <li>Stripe Payment Processing</li>
+        <li>User Authentication and Validation</li>
+        <li>Caching</li>
+        <li>Photoshop</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8 about-container">
+    <div class="about-card">
+      <h4>#Education</h4>
+      <% @educations.each do |education| %>
+        <h5><%= education.topic %> <span class="text-muted"> <%= education.time_involved %></span></h5>
+        <h6 class="text-muted"><%= education.institute %></h6>
+        <p><%= education.description %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="row"> 
+  <div class="col-xs-12 col-md-12 about-container">
+   <div class="about-card">
+     <h4>#Experience</h4>
+   </div>
+ </div>
+</div>
+
