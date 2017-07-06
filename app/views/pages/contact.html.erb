@@ -1,2 +1,29 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<h1>Contact me</h1>
+ <div class=> 
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 contact-container">   
+      <h4>Adress:</h4>
+      <ul>
+       <li>Clemens Diezinger</li>
+       <li>Stephanstr. 21</li>
+       <li>90478 Nürnberg</li>
+       <li>Germany</li>
+       <li></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-4 contact-container social">
+      <h4>Social Networks:</h4>
+      <div>
+        <%= link_to (fa_icon "linkedin"), "https://www.linkedin.com/in/clemens-diezinger-9b97565b/", class: "fa_icon-link"%>
+        <%= link_to (fa_icon "github"), "https://github.com/Cliquar/", class: "fa_icon-link" %>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 contact-container">
+      <h4>Mail:</h4>
+      <div>
+        <%= mail_to 'diezinger-web-dev@posteo.de', 'Mail me', class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div> 
+</div>

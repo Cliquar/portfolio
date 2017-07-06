@@ -114,3 +114,19 @@ footer {
 h1 {
   color: $intro-text-color;
 }
+
+.contact-container {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0.5%;
+}
+
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social a {
+  font-size: 3em;
+}
