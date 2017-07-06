@@ -54,14 +54,36 @@ span .emph {
 footer {
   text-align: center;
   color: $intro-text-color;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 1rem;
 }
 
-footer a {
+.fa_icon-link {
   font-size: 1.2em;
+  color: $intro-text-color;
+}
+
+.portfolio-container {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 1%;
+}
+
+.portfolio-container h4 {
+  padding-top: 5px;
+}
+
+.portfolio-show-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0.5%;
+}
+
+.page-title {
+  color: $intro-text-color;
+  text-align: center;
+}
+
+.show-heading {
   color: $intro-text-color;
 }

@@ -4,6 +4,8 @@ module ApplicationHelper
     [
       {url: root_path,
       title: 'Home'},
+      {url: portfolios_path,
+        title: 'Portfolio'},
       {url: about_path,
       title: 'About'},
       {url: contact_path,
@@ -18,6 +20,10 @@ module ApplicationHelper
       nav_links << "<li class='nav-item'><a href='#{item[:url]}' class='nav-link'>#{item[:title]}</a></li>"
     end
     nav_links.html_safe
+  end
+
+  def latest 
+    self.order("created_at DESC").limit(4)
   end
 
 end

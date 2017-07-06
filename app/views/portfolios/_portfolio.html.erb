@@ -1,0 +1,15 @@
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+  <div class="portfolio-container mx-auto">
+    <%= image_tag( portfolio.thumb_img, class: "img-thumbnail mx-auto") %>
+    <h4 class="card-title"><%= portfolio.title %></h4>
+    <h6 class="card-title"><%= portfolio.sub_title %></h6>
+    <p class="card-text"><%= portfolio.description.truncate(50) %></p>
+    <%= link_to 'Show', portfolio, class: "btn btn-primary" %>
+    
+    <div>
+      View code on
+      <%= link_to (fa_icon "globe"), portfolio.url_link, class: "fa_icon-link" if portfolio.url_link?%>
+      <%= link_to (fa_icon "github"), portfolio.gh_link, class: "fa_icon-link" if portfolio.gh_link?%>
+    </div>
+  </div>
+</div>  
