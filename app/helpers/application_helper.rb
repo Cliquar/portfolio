@@ -22,4 +22,8 @@ module ApplicationHelper
     nav_links.html_safe
   end
 
+  def latest 
+    self.order("created_at DESC").limit(4)
+  end
+
 end
