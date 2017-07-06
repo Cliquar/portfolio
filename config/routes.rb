@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { registrations: "registrations"}
   resources :portfolios
   root to: 'pages#home'
   get 'about', to: 'pages#about'

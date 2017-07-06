@@ -5,6 +5,7 @@
     <h6 class="card-title"><%= portfolio.sub_title %></h6>
     <p class="card-text"><%= portfolio.description.truncate(50) %></p>
     <%= link_to 'Show', portfolio, class: "btn btn-primary" %>
+    <%= link_to 'Edit', edit_portfolio_path(portfolio), class: "btn btn-primary" if user_signed_in? %>
     
     <div>
       View code on

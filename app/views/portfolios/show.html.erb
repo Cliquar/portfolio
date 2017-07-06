@@ -31,12 +31,13 @@
       <% end %>
 
       <div class="col-xs-12">
-        <%= link_to 'Back', portfolios_path, class: "btn btn-primary" %>
+        <%= link_to 'Back', portfolios_path, class: "btn btn-primary" %> 
+        <%= link_to 'Edit', edit_portfolio_path(@portfolio), class: "btn btn-primary" if user_signed_in? %> 
       </div>
     </div>
   </div>
   
 </div>
 
-<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-<%= link_to 'Back', portfolios_path %>
+
+

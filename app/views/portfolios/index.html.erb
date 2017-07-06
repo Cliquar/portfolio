@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<% if user_signed_in? %>
+  <div class="new-portfolio">
+    <%= link_to 'New Portfolio', new_portfolio_path, class: "btn btn-primary" %>
+  </div>
+<% end %>
+
 <h1 class="page-title">Portfolio</h1>
 <div class="row">
   <%= render @portfolios %>
@@ -9,4 +15,4 @@
 
 <br>
 
-<%= link_to 'New Portfolio', new_portfolio_path %>
+
