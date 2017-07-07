@@ -130,3 +130,9 @@ h1 {
 .social a {
   font-size: 3em;
 }
+
+@media (max-width: 991px) { 
+  .navbar-brand {
+    display: none;
+  }
+}
