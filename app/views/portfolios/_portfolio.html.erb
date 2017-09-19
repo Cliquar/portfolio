@@ -1,6 +1,8 @@
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
   <div class="portfolio-container">
-    <%= image_tag( portfolio.thumb_img, class: "img-thumbnail") %>
+    <div class="text-center">
+      <%= image_tag( portfolio.thumb_img, class: "img-thumbnail") %>
+    </div>
     <h4 class="card-title"><%= portfolio.title %></h4>
     <h6 class="card-title"><%= portfolio.sub_title %></h6>
     <p class="card-text"><%= portfolio.description.truncate(50) %></p>
