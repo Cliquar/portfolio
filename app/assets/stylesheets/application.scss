@@ -29,10 +29,20 @@ body {
 .intro {
   font-family: $main-font;
   font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 50px;
+  color: $intro-text-color;
+}
+
+@media (min-width: 992px) { 
+  .intro {
+  font-family: $main-font;
+  font-weight: 700;
   font-size: 2.5em;
   margin-top: 50px;
   color: $intro-text-color;
 }
+  }
 
 span .emph {
   color: $emph-color;
@@ -129,6 +139,10 @@ h1 {
 
 .social a {
   font-size: 3em;
+}
+
+.buttons {
+  margin-top: 5px;
 }
 
 @media (max-width: 991px) { 
